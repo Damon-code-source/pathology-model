@@ -1,0 +1,12 @@
+features_dir: data/features/h5_files
+output_csv: outputs/subtype_predictions.csv
+weights:
+  m1_vs_m23: weights/clam_sb_m1_vs_m23.pth
+  m12_vs_m3: weights/clam_sb_m12_vs_m3.pth
+model:
+  input_dim: 768
+  hidden_dim: 384
+  attention_dim: 256
+  dropout: true
+device: auto
+

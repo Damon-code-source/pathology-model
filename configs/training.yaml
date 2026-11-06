@@ -1,0 +1,20 @@
+seed: 123
+split:
+  train: 0.70
+  validation: 0.20
+  test: 0.10
+  group_column: case_id
+  stratify_column: subtype
+model:
+  input_dim: 768
+  hidden_dim: 384
+  attention_dim: 256
+  dropout: true
+training:
+  epochs: 100
+  learning_rate: 0.0002
+  weight_decay: 0.00001
+  optimizer: adam
+  loss: cross_entropy
+  weighted_sampling: true
+

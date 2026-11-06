@@ -1,0 +1,4 @@
+"""H&E-based molecular ecosystem subtyping for hepatocellular carcinoma."""
+
+__version__ = "1.0.0"
+

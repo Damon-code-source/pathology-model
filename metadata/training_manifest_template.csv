@@ -1,0 +1,5 @@
+case_id,slide_id,subtype,feature_path
+CASE001,SLIDE001,M1,data/features/h5_files/SLIDE001.h5
+CASE002,SLIDE002,M2,data/features/h5_files/SLIDE002.h5
+CASE003,SLIDE003,M3,data/features/h5_files/SLIDE003.h5
+

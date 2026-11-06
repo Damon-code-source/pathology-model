@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcc-he-molecular-subtyping"
+version = "1.0.0"
+description = "BEPH and CLAM-SB framework for H&E-based HCC molecular ecosystem classification"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "h5py>=3.8",
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.2",
+  "torch>=2.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+wsi = ["openslide-python>=1.3", "Pillow>=9.5"]
+
+[project.scripts]
+hcc-he-infer = "hcc_he_subtyping.inference:main"
+hcc-he-split = "hcc_he_subtyping.splits:main"
+hcc-he-train = "hcc_he_subtyping.training:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
